@@ -19,7 +19,7 @@ export default App = () => {
   });
 
   function addDigit(n) {
-    if (n === "." && displayValue.initial.includes(".")) {
+    if (n === "." && !clearDisplay && displayValue.initial.includes(".")) {
       return;
     }
 
